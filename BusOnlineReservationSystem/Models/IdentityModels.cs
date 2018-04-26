@@ -29,5 +29,9 @@ namespace BusOnlineReservationSystem.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BusOnlineReservationSystem.Models.Lines> Lines { get; set; }
+
+        public System.Data.Entity.DbSet<BusOnlineReservationSystem.Models.Bus> Buses { get; set; }
     }
 }
