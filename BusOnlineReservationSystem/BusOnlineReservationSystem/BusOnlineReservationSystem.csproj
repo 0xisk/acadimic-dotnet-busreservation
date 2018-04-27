@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BusesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LinesController.cs" />
@@ -142,10 +143,15 @@
     <Compile Include="Migrations\201804262110378_addbustable.Designer.cs">
       <DependentUpon>201804262110378_addbustable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804262358187_addusertable.cs" />
+    <Compile Include="Migrations\201804262358187_addusertable.Designer.cs">
+      <DependentUpon>201804262358187_addusertable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Models\BusOnlineReservationSystemContext.cs" />
     <Compile Include="Models\Line.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +199,10 @@
     <Content Include="Views\Buses\Details.cshtml" />
     <Content Include="Views\Buses\Edit.cshtml" />
     <Content Include="Views\Buses\Index.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\LoggedIn.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -211,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804262110378_addbustable.resx">
       <DependentUpon>201804262110378_addbustable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804262358187_addusertable.resx">
+      <DependentUpon>201804262358187_addusertable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

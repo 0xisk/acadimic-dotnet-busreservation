@@ -10,6 +10,6 @@ namespace BusOnlineReservationSystem.Models
     {
         public virtual DbSet<Line> Lines { get; set; }
         public virtual DbSet<Bus> Buses { get; set; }
-
+        public virtual DbSet<User> Users { get; set; }
     }
 }
